@@ -1,7 +1,7 @@
 import axios from "axios";
 import { loadState } from "./storege";
 
-const request = axios.create({ baseURL: import.meta.env.VITE_APP_URL });
+const request = axios.create({ baseURL: "http://localhost:3000" });
 
 request.interceptors.request.use((config) => {
   config.headers = {
